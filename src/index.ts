@@ -1,2 +1,7 @@
-import Counter from './counter';
-export default new Counter();
+// import Counter from './counter';
+
+import { testResolveAsyncTree } from './async-graph';
+
+// export default new Counter();
+
+void testResolveAsyncTree();
