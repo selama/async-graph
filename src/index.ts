@@ -1,7 +1,7 @@
-// import Counter from './counter';
+import { _AsyncGraphResolver, _AsyncGraph, _AsyncNode } from './async-graph';
 
-import { testResolveAsyncTree } from './async-graph';
+export const AsyncGraphResolver = _AsyncGraphResolver;
 
-// export default new Counter();
+export type AsyncGraph = _AsyncGraph;
 
-void testResolveAsyncTree();
+export type AsyncNode = _AsyncNode;
