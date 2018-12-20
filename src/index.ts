@@ -5,3 +5,7 @@ export const AsyncGraphResolver = _AsyncGraphResolver;
 export type AsyncGraph = _AsyncGraph;
 
 export type AsyncNode = _AsyncNode;
+
+import { demoAsyncGraph } from './example/example';
+
+void demoAsyncGraph();
