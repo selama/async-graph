@@ -13,6 +13,7 @@ export const getProductPrices = (_skus: string, _geo: string) =>
   ) as getProductPricesResult;
 
 export const mergePlansPrices = async (plans, geo) => {
+  console.log('mergePlansPrices started');
   const prices = await getProductPrices(plans.map(plan => plan.sku), geo);
   return plans.map(plan => ({
     ...plan,

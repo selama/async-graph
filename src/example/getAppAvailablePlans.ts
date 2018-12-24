@@ -8,8 +8,9 @@ type getAppAvailablePlansResult = Promise<
   }[]
 >;
 
-export const getAppAvailablePlans = (_appDefId: string) =>
-  new Promise(resolve =>
+export const getAppAvailablePlans = (_appDefId: string) => {
+  console.log('getAppAvailablePlans started');
+  return new Promise(resolve =>
     setTimeout(() => {
       resolve([
         {
@@ -43,3 +44,4 @@ export const getAppAvailablePlans = (_appDefId: string) =>
       ]);
     }, 1000),
   ) as getAppAvailablePlansResult;
+};
